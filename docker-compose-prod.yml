@@ -7,10 +7,10 @@ services:
     command: gunicorn bookstore_project1.wsgi -b 0.0.0.0:8000
     environment: 
       - ENVIRONMENT=production
-      - SECRET_KEY=n1--dnixf!0-wn24*9k(-+ju$$tdl9jkcy36$$dg38=wvobxam&qn(q$$t-zh1x
+      - SECRET_KEY=<anything>
       - DEBUG=0
-      - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_51IDe0fIw7padbDjWciDWOXNSxHw31WyWz8zWJFwJbfjFz0HXQ2tnZiFxccdW3zQdBRgTlVF90825udJw27qliF02001t8r22ct
-      - STRIPE_TEST_SECRET_KEY=sk_test_51IDe0fIw7padbDjWbVJQW5VR8enkCgqrSZ2rVBPsm8Kfox0pFLCaJDzdndwzXrrvf6zmdwE7Hz2OMd6nnJ0MDOkz00HP8qnEt3 
+      - STRIPE_TEST_PUBLISHABLE_KEY=<anything>
+      - STRIPE_TEST_SECRET_KEY=<anything> 
     ports: 
       - 8000:8000
     depends_on: 
